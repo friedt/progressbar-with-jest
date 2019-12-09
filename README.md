@@ -1,7 +1,7 @@
 # ProgressBar 
  ProgressBar html5 element <progress> global object which is created on the page when needed
  this object is written in vanillaJS
- arrayOfElements must be javascript array
+ arrayOfElements must be javascript nodeList(will be converted to array)
  
  This can be used on pages with for example: forms with multiple steps 
 
