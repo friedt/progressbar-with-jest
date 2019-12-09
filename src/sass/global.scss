@@ -1,0 +1,7 @@
+:root {
+  --background-color-progress: grey;
+  --background-color-value: deepskyblue;
+}
+
+@import "components.progress";
+@import "components.link";

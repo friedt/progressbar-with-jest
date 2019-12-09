@@ -1,0 +1,8 @@
+.link {
+
+}
+
+.link--disabled {
+  display: inline-block; // IE11 support
+  pointer-events: none;
+}
