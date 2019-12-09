@@ -49,6 +49,7 @@ src/
 
 It consists of a:
 <ul>
+<li>'javascript' folder which contains the es6 javascript partials which are bundled by webpack 
 <li>'html' folder which contains the example.html
 </li>
 
