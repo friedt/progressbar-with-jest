@@ -1,6 +1,6 @@
 /*
- this file contains de ProgressBar html5 element <progress> global object which is created on the page when needed
- this object is written in vanillaJS
+ This file contains de Progress html5 element <progress> which is created on the page when needed.
+ This is written in vanillaJS
  arrayOfElements must be javascript nodeList (converted to array)
 
  more on this element and browser compatibility : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
