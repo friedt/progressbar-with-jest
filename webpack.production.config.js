@@ -1,5 +1,4 @@
 // Webpack uses this to work with directories
-require("babel-register");
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -47,6 +46,9 @@ module.exports = {
                         options: {
                             name: 'css/global.css',
                         }
+                    },
+                    {
+                        loader: 'postcss-loader',
                     },
                     {
                         loader: 'sass-loader'

@@ -14,22 +14,22 @@ let length;
 let bar;
 let parts;
 
+const handleProgressInvokers = (elm, e) => {
+    let target =  e.target;
+    if (target.classList.contains('progress--invoker') && !target.classList.contains('progress--invoked')){
+        target.classList.add('progress--invoked');
+        countProgress++;
+        setValue(parts);
+        let nextElement = elm.nextElementSibling;
+        if (nextElement !== null) nextElement.querySelector('.progress--invoker').classList.remove('link--disabled');
+    }
+
+};
+
 
 const bindElementsToProgress = (elm) => {
 
-    elm.addEventListener('click', (e) =>{
-        //console.log(e.target, i);
-        let target =  e.target;
-        if (target.classList.contains('progress--invoker') && !target.classList.contains('progress--invoked')){
-            target.classList.add('progress--invoked');
-            countProgress++;
-            setValue(parts);
-            let nextElement = elm.nextElementSibling;
-            if (nextElement !== null) nextElement.querySelector('.progress--invoker').classList.remove('link--disabled');
-        }
-
-
-    });
+    elm.addEventListener('click', handleProgressInvokers.bind(null, elm));
 };
 
 const getNodeList = (arrayOfElements) => {
@@ -42,7 +42,7 @@ const getNodeList = (arrayOfElements) => {
 
 const createProgressBar = () => {
     bar = document.createElement('progress');
-    bar.className = 'progress js-progress-bar';
+    bar.className = 'js-progress-bar';
     bar.id = 'progress-bar';
     bar.setAttribute('max', 100);
     bar.value = 0;
