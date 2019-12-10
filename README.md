@@ -1,9 +1,9 @@
 # ProgressBar 
- progress html5 element <progress> which is created on the page when needed. This is written in vanillaJS,
+ This is a progress html5 element '<progress>' which is created on the page when needed. This is written in vanillaJS,
  arrayOfElements must be javascript nodeList(will be converted to an array).
  This is tested in most common devices/browsers on desktop and mobile including IE10/11
  
- This can be used on pages with for example: forms with multiple steps 
+ This HTML element can be used on pages with for example: forms with multiple steps 
 
 # Documentation progress bar
 
