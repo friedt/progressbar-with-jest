@@ -7,6 +7,8 @@
 
 # Documentation progress bar
 
+This is an ES6 module which can be included. The css(scss) and HTML are separate and can be customized for your own styleguide.  
+
 # Installation 
 
 ```shell
