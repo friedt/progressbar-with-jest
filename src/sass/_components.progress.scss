@@ -21,11 +21,11 @@ progress::-webkit-progress-value {
   transition: width .4s ease-in-out;
 }
 
-progress::-ms-fill {
+progress::-moz-progress-bar {
   background-color: var(--background-color-value);
 }
 
-progress::-moz-progress-bar {
-  background-color: var(--background-color-value);
+progress::-ms-fill {
+  background: var(--background-color-value);  // this must be background property in order to work in edge 15-17 background-color does not work
 }
 
