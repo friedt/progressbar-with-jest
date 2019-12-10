@@ -6,7 +6,7 @@
  more on this element and browser compatibility : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
  */
 
-/* exported ProgressBar */
+/* this is a ES6 module which can be imported using import  */
 
 let elements;
 let countProgress = 0;
