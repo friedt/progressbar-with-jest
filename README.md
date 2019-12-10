@@ -2,9 +2,9 @@
  This is a html5 element <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">`<progress>`</a> which is created on the page when needed. This small module is written in vanillaJS,
  arrayOfElements is a parameter and must be a javascript nodeList(will be converted to an array).
  The element can be put in your html source. If it is not present in the html source, it will be created by the module directly after the `<body>` tag.
- This is tested in most common devices/browsers on desktop and mobile including IE10/11
+ This module is tested in most common devices/browsers on desktop and mobile including IE10/11
  
- This HTML element can be used on pages with for example: forms with multiple steps 
+ This HTML element can be used on pages with for example: forms or sections with multiple steps 
 
 # Documentation progress bar
 
@@ -18,7 +18,7 @@ $ npm run serve
 $ npm run build
 $ npm run dev
 $ npm start
-$ npm run eslint
+$ npm run eslint // this is already part of the webpack configuration
 ```
 
 <ul>
