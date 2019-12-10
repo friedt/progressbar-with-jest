@@ -1,5 +1,5 @@
 # ProgressBar 
- This is a progress html5 element [code]<progress>[/code] which is created on the page when needed. This is written in vanillaJS,
+ This is a html5 element `<progress>` which is created on the page when needed. This is written in vanillaJS,
  arrayOfElements must be javascript nodeList(will be converted to an array).
  This is tested in most common devices/browsers on desktop and mobile including IE10/11
  
