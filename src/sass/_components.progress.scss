@@ -1,11 +1,11 @@
 
-.progress {
+progress {
   appearance: none;
   display: block;
   width: 100%;
   border: none;
   background-color: var(--background-color-progress);
-  height: 8px;
+  height: 18px;
   position: fixed;
   z-index: 30000;
   top: 0;
@@ -16,12 +16,12 @@
   }
 }
 
-.progress::-webkit-progress-value {
+progress::-webkit-progress-value {
   background-color: var(--background-color-value);
   transition: width .4s ease-in-out;
 }
 
-.progress::-ms-fill {
+progress::-ms-fill {
   background-color: var(--background-color-value);
 }
 
