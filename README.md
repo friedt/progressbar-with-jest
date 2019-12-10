@@ -72,7 +72,7 @@ sass-loader and file-loader are used to bundle the css in a separate css file
 
 - .babelrc : config babel settings
 - .eslintrc.js : config eslint settings
-- webpack.*.config.js : config webpack settings
+- webpack.*.config.js : config webpack files for development and production
 - postcss.config.js
 
 ### Example
