@@ -13,6 +13,8 @@ $ npm install
 $ npm run serve
 $ npm run build
 $ npm run dev
+$ npm start
+$ npm run eslint
 ```
 
 <ul>
@@ -42,24 +44,36 @@ Webpack Plugins used:
 
 ### Source Folder Structure
 
-sass/  folder which containes all the scss files
+
 
 src/
 
 It consists of a:
 <ul>
+<li>'sass' folder which containes all the scss files</li>
 <li>'javascript' folder which contains the es6 javascript partials which are bundled by webpack 
 <li>'html' folder which contains the example.html
 </li>
-
-
 </ul>
 
+
+
 ### Config files
+
+Webpack 4 is used together with babel 7 to build js files. Postcss is used together with 2 plugins: 
+- autoprefixer to prefix css properties.
+- postcss-custom-properties as a fallback.
+
+sass-loader and file-loader are used to bundle the css in a separate css file
 
 - .babelrc : config babel settings
 - .eslintrc.js : config eslint settings
 - webpack.*.config.js : config webpack settings
+- postcss.config.js
+
+### Example
+
+In order to provide an example a simple html file with an unordered list to see the progress bar in action. Of course this can be more complex tabs or sections or whatever for example. Buttons or links to go to next section are disabled by default and the next button will be active until after the current one is invoked.
 
 
 
