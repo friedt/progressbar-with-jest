@@ -1,4 +1,4 @@
-/*
+/**
  This file contains de Progress html5 element <progress> which is created on the page when needed.
  This is written in vanillaJS
  arrayOfElements must be javascript nodeList (converted to array)
@@ -6,13 +6,14 @@
  more on this element and browser compatibility : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
  */
 
-/* this is a ES6 module which can be imported using import  */
+/** this is a ES6 module which can be imported using import  */
 
 let elements;
 let countProgress = 0;
 let length;
 let bar;
 let parts;
+
 
 const handleProgressInvokers = (elm, e) => {
     let target =  e.target;
@@ -62,7 +63,6 @@ const setProgressBarParts = (length) => {
 };
 
 export const init = (arrayOfElements) => {
-
     if (!document.querySelector('.js-progress-bar')) {
         getNodeList(arrayOfElements);
         createProgressBar();
