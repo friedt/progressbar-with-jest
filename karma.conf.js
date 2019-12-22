@@ -9,21 +9,16 @@ module.exports = function (config) {
 
         // plugins
         plugins: [
-            //'karma-coverage',
             'karma-coverage-istanbul-reporter',
             'karma-spec-reporter',
             'karma-webpack',
             'karma-jasmine',
             'karma-jasmine-matchers',
             'karma-chrome-launcher',
-
-
         ],
         // preprocess matching files BEFORE serving to browser
         preprocessors: {
-            //'*.js': ['coverage']
             'src/javascript/*.js': ['webpack'],
-            //'src/javascript/!(*spec).js': ['coverage'],
 
         },
         autoWatch: true,
@@ -68,8 +63,7 @@ module.exports = function (config) {
         //list of files to exclude
         exclude: [],
         // test results reporters to use
-        // reporters: ['spec', 'coverage'], //'spec' to see specs list
-        reporters: ['spec', 'coverage-istanbul'],
+        reporters: ['spec', 'coverage-istanbul'], //'spec' to see specs list
         specReporter: {
             suppressErrorSummary: false,
             failFast: false
@@ -81,7 +75,7 @@ module.exports = function (config) {
         singleRun: false,
         coverageIstanbulReporter: {
             reporters: [
-                // reporters not supporting the `file` property
+                // reporters
                 ['html', 'lcovonly'],
             ],
             dir: path.join(__dirname, 'coverage'),
@@ -93,29 +87,6 @@ module.exports = function (config) {
                 }
             },
         },
-        // changed default output dir from 'coverage/'
-        //     reports: [
-        //         // reporters not supporting the `file` property
-        //         ['html','lcovonly'],
-        //     ],
-        //     combineBrowserReports: true,
-        //
-        //
-        // },
-        // coverageReporter : {
-        //     type : 'text',
-        //     dir : 'coverage/',
-        //     file : 'coverage.txt'
-        // },
-        // coverageReporter: {
-        //     dir: 'coverage/',
-        //     instrumenterOptions: {
-        //          istanbul: { noCompact: true }
-        //      },
-        //     reporters: [ {
-        //         type: 'lcovonly',
-        //         //subdir: 'report-lcov'
-        //     },]
-        // }
+
     })
 };
