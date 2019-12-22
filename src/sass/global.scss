@@ -1,7 +1,14 @@
 :root {
-  --background-color-progress: grey;
+  --background-color-progress: silver;
   --background-color-value: deepskyblue;
 }
 
-@import "components.progress";
+body{
+  background-image: url("https://www.frontend-developer.eu/images/photo1-2.jpg");
+  font-family: 'Roboto', sans-serif;
+}
+
 @import "components.link";
+@import "components.list";
+@import "components.progress";
+@import "components.button";

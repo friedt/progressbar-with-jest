@@ -53,10 +53,7 @@ describe('progress-bar.js', function () {
     });
 
     it('should check if progress html element is NOT present in DOM', function () {
-
-        let progressBar = document.querySelector('.js-progress-bar');
         progressBar = null;
-        //console.log(progressBar);
         expect(progressBar).toBe(null);
     });
 

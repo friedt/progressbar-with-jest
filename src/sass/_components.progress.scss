@@ -29,3 +29,14 @@ progress::-ms-fill {
   background: var(--background-color-value);  // this must be background property in order to work in edge 15-17 background-color does not work
 }
 
+.progress--invoked {
+  background-color: rgba(0,0,0, 0.5);
+  padding: 15px;
+  background-clip: padding-box;
+  border: 20px solid rgba(0,0,0,0.3);
+  border-radius: 40px;
+
+}
+
+.progress--disabled {}
+

@@ -16,8 +16,9 @@ let parts;
 
 const handleProgressInvokers = (elm, e) => {
     let target =  e.target;
-    if (target.classList.contains('progress--invoker') && !target.classList.contains('progress--invoked')){
-        target.classList.add('progress--invoked');
+    if (target.classList.contains('progress--invoker') && !target.classList.contains('progress--disabled')){
+        target.closest('li').classList.add('progress--invoked');
+        target.classList.add('progress--disabled');
         countProgress++;
         setValue(parts);
         let nextElement = elm.nextElementSibling;
@@ -38,7 +39,7 @@ const getNodeList = (nodeList) => {
 
 const createProgressBar = () => {
     bar = document.createElement('progress');
-    bar.className = 'js-progress-bar';
+    bar.classList.add('js-progress-bar');
     bar.id = 'progress-bar';
     bar.setAttribute('max', 100);
     bar.value = 0;
@@ -49,7 +50,6 @@ const setValue = (percentage) => {
     const value = percentage * countProgress; //this is the value which increases the progress bar
     bar.setAttribute('value', value);
 };
-
 
 const setProgressBarParts = () => {
     const maxValue = bar.getAttribute('max');
