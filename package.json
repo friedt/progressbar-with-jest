@@ -51,7 +51,8 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "core-js": "^3.6.0"
+    "core-js": "^3.6.0",
+    "element-closest-polyfill": "^1.0.0"
   },
   "repository": {
     "type": "git",

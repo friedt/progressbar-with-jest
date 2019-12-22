@@ -1,4 +1,6 @@
-import 'core-js/es/array/from'; // polyfill IE11
+import 'core-js/es/array/from'; // polyfill IE10/11
+import 'element-closest-polyfill'; // polyfill IE10/11
+
 import {initProgressBar} from './progress-bar';
 
 // get nodelist to bind to the progress-bar
