@@ -3,11 +3,14 @@
   --background-color-value: deepskyblue;
 }
 
+
+
 body{
   background-image: url("https://www.frontend-developer.eu/images/photo1-2.jpg");
   font-family: 'Roboto', sans-serif;
 }
 
+@import "generic.normalize";
 @import "components.link";
 @import "components.list";
 @import "components.progress";

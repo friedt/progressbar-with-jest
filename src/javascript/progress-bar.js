@@ -24,6 +24,7 @@ const handleProgressInvokers = (elm, e) => {
         let nextElement = elm.nextElementSibling;
         if (nextElement !== null) nextElement.querySelector('.progress--invoker').classList.remove('link--disabled');
     }
+    e.preventDefault();
 };
 
 
