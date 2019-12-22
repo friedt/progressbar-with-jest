@@ -1,9 +1,9 @@
 # ProgressBar 
- progress html5 element <progress> which is created on the page when needed. This is written in vanillaJS,
- arrayOfElements must be javascript nodeList(will be converted to an array).
- This is tested in most common devices/browsers on desktop and mobile including IE10/11
+ This es6 module contains a progress html5 element <progress> which is created on the page when needed. This is written in vanillaJS,
+ nodeList must be javascript nodeList(will be converted to an array).
+ This module is tested in most common devices/browsers on desktop and mobile including IE10/11
  
- This can be used on pages with for example: forms with multiple steps 
+ This module can be imported on pages with for example: forms with multiple steps 
 
 # Documentation progress bar
 
@@ -16,7 +16,7 @@ $ npm run build
 $ npm run dev
 $ npm start
 $ npm test
-$ npm run eslint
+$ npm run eslint # also present in webpack config: eslint-loader
 ```
 
 <ul>
@@ -59,6 +59,12 @@ It consists of a:
 </li>
 </ul>
 
+### Unit testing
+
+The javascript source files are unit tested using karma jasmine. 
+All unit tests are included with full coverage report using istanbul
+the test files have a glob pattern containing: `*.spec.js`
+
 
 
 ### Config files
@@ -75,9 +81,11 @@ sass-loader and file-loader are used to bundle the css in a separate css file
 - postcss.config.js
 - karma.conf.js : unit testing using Jasmine
 
+
+
 ### Example
 
-In order to provide an example a simple html file with an unordered list to see the progress bar in action. Of course this can be more complex tabs or sections or whatever for example. Buttons or links to go to next section are disabled by default and the next button will be active until after the current one is invoked. All unit tests are included with full coverage report
+In order to provide an example a simple html file with an unordered list to see the progress bar in action. Of course this can be more complex tabs or sections or whatever for example. Buttons or links to go to next section are disabled by default and the next button will be active until after the current one is invoked. 
 
 
 
