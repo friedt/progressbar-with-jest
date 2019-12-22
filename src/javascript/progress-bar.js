@@ -14,7 +14,6 @@ let length;
 let bar;
 let parts;
 
-
 const handleProgressInvokers = (elm, e) => {
     let target =  e.target;
     if (target.classList.contains('progress--invoker') && !target.classList.contains('progress--invoked')){
@@ -24,21 +23,17 @@ const handleProgressInvokers = (elm, e) => {
         let nextElement = elm.nextElementSibling;
         if (nextElement !== null) nextElement.querySelector('.progress--invoker').classList.remove('link--disabled');
     }
-
 };
 
 
 const bindElementsToProgress = (elm) => {
-
     elm.addEventListener('click', handleProgressInvokers.bind(null, elm));
 };
 
-const getNodeList = (arrayOfElements) => {
-
-    elements = Array.from(arrayOfElements); // convert nodeList to Array
+const getNodeList = (nodeList) => {
+    elements = Array.from(nodeList); // convert nodeList to Array
     length = elements.length;
     elements.forEach(bindElementsToProgress);
-
 };
 
 const createProgressBar = () => {
@@ -55,21 +50,20 @@ const setValue = (percentage) => {
     bar.setAttribute('value', value);
 };
 
-const setProgressBarParts = (length) => {
 
+const setProgressBarParts = () => {
     const maxValue = bar.getAttribute('max');
     return maxValue / length;
-
 };
 
-export const init = (arrayOfElements) => {
-    if (!document.querySelector('.js-progress-bar')) {
-        getNodeList(arrayOfElements);
+export const initProgressBar = (nodeList) => {
+    if (document.querySelector('.js-progress-bar') === null) {
+        getNodeList(nodeList);
         createProgressBar();
-        setTimeout(parts = setProgressBarParts(length), 10); // in order to show css animation initially
+        parts = setProgressBarParts();
     } else {
-        getNodeList(arrayOfElements);
+        getNodeList(nodeList);
         bar = document.querySelector('.js-progress-bar');
-        parts = setProgressBarParts(length);
+        parts = setProgressBarParts();
     }
 };

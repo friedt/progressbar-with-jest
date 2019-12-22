@@ -1,9 +1,19 @@
-//import 'core-js-pure/features/array/from'; // polyfill IE11
-import {init} from './progress-bar';
+import 'core-js/es/array/from'; // polyfill IE11
+import {initProgressBar} from './progress-bar';
 
-const elements = document.querySelectorAll('.js-progress-elements li');
+// get nodelist to bind to the progress-bar
+export const getNodeList = () => {
+    let nodeList = document.querySelectorAll('.js-progress-elements li');
+    (nodeList.length > 0) ? initProgressBar(nodeList) : null;
 
-init(elements);
+};
+
+getNodeList();
+
+
+
+
+
 
 
 

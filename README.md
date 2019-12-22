@@ -15,6 +15,7 @@ $ npm run serve
 $ npm run build
 $ npm run dev
 $ npm start
+$ npm test
 $ npm run eslint
 ```
 
@@ -26,6 +27,7 @@ which listens to http://localhost:8081/</li>
 <li>'npm run build' will run eslint first and will build the project in production mode using Webpack and creates a 'dist' folder with all the built files which is the root folder of localhost</li>
 
 <li>'npm run dev' will build project in development mode </li>
+<li>'npm test' will start karma test runner to unit test the javascript files and watch in development mode, it will create a 'coverage' folder with html output to view the test report </li>
 </ul>
 
 TODO setup unit testing
@@ -71,10 +73,11 @@ sass-loader and file-loader are used to bundle the css in a separate css file
 - .eslintrc.js : config eslint settings
 - webpack.*.config.js : config webpack settings
 - postcss.config.js
+- karma.conf.js : unit testing using Jasmine
 
 ### Example
 
-In order to provide an example a simple html file with an unordered list to see the progress bar in action. Of course this can be more complex tabs or sections or whatever for example. Buttons or links to go to next section are disabled by default and the next button will be active until after the current one is invoked.
+In order to provide an example a simple html file with an unordered list to see the progress bar in action. Of course this can be more complex tabs or sections or whatever for example. Buttons or links to go to next section are disabled by default and the next button will be active until after the current one is invoked. All unit tests are included with full coverage report
 
 
 
