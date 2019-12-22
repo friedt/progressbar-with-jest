@@ -30,7 +30,6 @@ which listens to http://localhost:8081/</li>
 <li>'npm test' will start karma test runner to unit test the javascript files and watch in development mode, it will create a 'coverage' folder with html output to view the test report </li>
 </ul>
 
-TODO setup unit testing
 
 # Configuration
 
