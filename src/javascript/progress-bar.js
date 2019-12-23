@@ -22,7 +22,7 @@ const handleProgressInvokers = (elm, e) => {
         countProgress++;
         setValue(parts);
         let nextElement = elm.nextElementSibling;
-        if (nextElement !== null) nextElement.querySelector('.progress--invoker').classList.remove('link--disabled');
+        (nextElement !== null) ? nextElement.querySelector('.progress--invoker').classList.remove('link--disabled') : null;
     }
     e.preventDefault();
 };

@@ -38,6 +38,13 @@ describe('progress-bar.js', function () {
         expect(progressBar.max).toBe(100);
     });
 
+    it('should have clicked the button with className progress--disabled', function () {
+        let button = document.querySelector('.progress--invoker');
+        button.classList.add('progress--disabled');
+        button.click();
+        expect(button).toHaveClass('progress--disabled');
+    });
+
     it('should have clicked the button with className progress--invoker', function () {
         let button = document.querySelector('.progress--invoker');
         button.click();
