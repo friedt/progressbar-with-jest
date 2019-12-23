@@ -28,7 +28,6 @@ describe('progress-bar.js', function () {
 
     });
 
-
     it('should call initProgressBar()', function () {
         spyOn(obj, 'progress').withArgs(nodeList);
         obj.progress(nodeList);
