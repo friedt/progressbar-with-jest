@@ -1,7 +1,7 @@
 # ProgressBar 
  This es6 module contains a progress html5 element <progress> which is created on the page when needed. This is written in vanillaJS,
  nodeList must be a javascript nodeList(will be converted to an array).
- This module is unit tested as well as tested in most common devices/browsers on desktop and mobile including IE10/11
+ This module has been unit tested as well as tested in most common devices/browsers on desktop and mobile including IE10/11
  
  This module can be imported on pages with for example: forms with multiple steps 
 
