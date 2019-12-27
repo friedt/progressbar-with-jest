@@ -1,7 +1,7 @@
 /**
- This file contains de Progress html5 element <progress> which is created on the page when needed.
- This is written in vanillaJS
- arrayOfElements must be javascript nodeList (converted to array)
+ This file contains de Progress html5 element <progress> which is created on the page when not present in html.
+ This is written in es6
+ nodeList must be javascript nodeList (converted to array)
 
  more on this element and browser compatibility : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
  */
