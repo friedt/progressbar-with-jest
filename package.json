@@ -4,7 +4,7 @@
   "description": "using progress html5 element",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "jest && npm run eslint && webpack --config webpack.production.config.js --mode=production",
     "dev": "webpack --config webpack.development.config.js --mode=development",
     "serve": "http-server dist --port 8080 & npm run dev",
