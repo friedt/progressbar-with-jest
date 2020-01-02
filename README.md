@@ -60,8 +60,8 @@ It consists of a:
 
 ### Unit testing
 
-The javascript source files are unit tested using karma as test runner and jasmine as test framework. 
-All unit tests are included with full coverage report using istanbul
+The javascript source files are unit tested using Jest as test framework. 
+All unit tests are included with full coverage report
 the test files have a glob pattern containing: `*.spec.js`
 
 
@@ -78,7 +78,6 @@ sass-loader and file-loader are used to bundle the css in a separate css file
 - .eslintrc.js : config eslint settings
 - webpack.*.config.js : config webpack settings
 - postcss.config.js
-- karma.conf.js : unit testing using Jasmine
 
 
 
