@@ -31,8 +31,8 @@ describe('progress-bar.js', function () {
     });
 
 
-    test('should call initProgressBar()', function () {
-        spyOn(obj, 'progress');
+    it('should call initProgressBar()', function () {
+        jest.spyOn(obj, 'progress');
         obj.progress(nodeList);
         progressBar = document.getElementById('progress-bar');
         expect(progressBar).toBeInTheDocument();
@@ -45,7 +45,7 @@ describe('progress-bar.js', function () {
 
 
 
-    test('should have clicked the button with only className progress--invoker', function () {
+    it('should have clicked the button with only className progress--invoker', function () {
         let button = document.querySelector('.progress--invoker');
         expect(button).not.toHaveClass('progress--disabled');
         button.click();
@@ -53,13 +53,13 @@ describe('progress-bar.js', function () {
 
     });
 
-    test('should have clicked the button which contains className progress--disabled', function () {
+    it('should have clicked the button which contains className progress--disabled', function () {
         let button = document.querySelector('.progress--invoker');
         button.click();
         expect(button).toHaveClass('progress--disabled');
     });
 
-    test('should check if progress html element is already present in DOM', function () {
+    it('should check if progress html element is already present in DOM', function () {
         let progressBar = document.createElement('progress');
         progressBar.className = 'js-progress-bar';
         document.body.appendChild(progressBar);
@@ -67,7 +67,7 @@ describe('progress-bar.js', function () {
         expect(progressBar).toBeTruthy();
     });
 
-    test('should check if progress html element is NOT present in DOM', function () {
+    it('should check if progress html element is NOT present in DOM', function () {
         progressBar = null;
         expect(progressBar).toBeNull();
         expect(progressBar).toBeFalsy(); // 0 , undefined , null
