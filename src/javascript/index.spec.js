@@ -31,7 +31,7 @@ describe('index.js', function () {
         list.parentNode.removeChild(list);
     });
 
-    it('should getNodeList() to have been called', function () {
+    test('should getNodeList() to have been called', function () {
         spyOn(obj, 'list');
         obj.list();
         expect(obj.list).toHaveBeenCalled();
