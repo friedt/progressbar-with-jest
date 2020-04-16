@@ -27,7 +27,7 @@ which listens to http://localhost:8081/</li>
 <li>'npm run build' will run eslint first and will build the project in production mode using Webpack and creates a 'dist' folder with all the built files which is the root folder of localhost</li>
 
 <li>'npm run dev' will build project in development mode </li>
-<li>'npm test' will start karma test runner to unit test the javascript files and watch in development mode, it will create a 'coverage' folder with html output to view the test report </li>
+<li>'npm test' will start jest to unit test the javascript files, it will create a 'coverage' folder with html output to view the test report </li>
 </ul>
 
 
